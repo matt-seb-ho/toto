@@ -15,9 +15,9 @@ Totoro::Totoro(double x, double y, color c){
 	Es.push_back(make_shared<ellipse>(70, 60, 5, 5, 2.0, colourMap["black"]));
 	Es.push_back(make_shared<ellipse>(130, 60, 5, 5, 2.0, colourMap["black"]));
 	Es.push_back(make_shared<ellipse>(100, 64, 16.5, 4.5, 2.0, colourMap["black"]));
-	std::vector<vec2> verts1 = {vec2(64, 0), vec2(54, 34), vec2(74, 34)};
+	verts1 = {vec2(64, 0), vec2(54, 34), vec2(74, 34)};
 	Ps.push_back(make_shared<Polygon>(verts1, 1.0, c));
-	std::vector<vec2> verts2 = {vec2(136, 0), vec2(146, 34), vec2(126, 34)};
+	verts2 = {vec2(136, 0), vec2(146, 34), vec2(126, 34)};
 	Ps.push_back(make_shared<Polygon>(verts2, 1.0, c));
 	Rs.push_back(make_shared<Rect>(23, 70, 58, 70, colourMap["black"], 2.0));
 	Rs.push_back(make_shared<Rect>(17, 75, 52, 75, colourMap["black"], 2.0));

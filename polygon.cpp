@@ -26,6 +26,7 @@ bool Polygon::eval(double x, double y) {
 	vec2 start = theVerts.at(0);
 
 	v1 = start;
+	std::cout << theVerts.size() << endl;
 	//use iterator loop
 	for (std::vector<vec2>::iterator it = theVerts.begin() ; 
 		it != theVerts.end(); ++it) {

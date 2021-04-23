@@ -22,6 +22,8 @@ private:
 	std::vector<shared_ptr<ellipse> > Es;
 	std::vector<shared_ptr<Rect> > Rs;
 	std::vector<shared_ptr<Polygon> > Ps;
+	std::vector<vec2> verts1;
+	std::vector<vec2> verts2;
 	std::map<std::string, color> colourMap;
 };
 #endif

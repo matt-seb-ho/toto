@@ -18,15 +18,12 @@ bool Polygon::eval(double x, double y) {
 	vec2 v1, v2;
 	float d1;
 	//must at least be a triangle (assuming closed polygon not line)
-	//cout << "tV len: " << theVerts.size() << endl;
 	assert(theVerts.size() >=3);
 
 	std::vector<vec2>::iterator nxt = theVerts.begin();
-	//cout << "tV len: " << theVerts.size() << endl;
 	vec2 start = theVerts.at(0);
 
 	v1 = start;
-	std::cout << theVerts.size() << endl;
 	//use iterator loop
 	for (std::vector<vec2>::iterator it = theVerts.begin() ; 
 		it != theVerts.end(); ++it) {
